@@ -18,11 +18,16 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'about_me.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: '/404', // if no resume, the button will not show up
+  img: 'brien_1.jpg',
+  paragraphOne:
+    'I reign from Buffalo, New York home of the Buffalo Bills & the worlds best chicken wings! I graduated from Ithaca College where I played defensive tackle for the football team in 2019 with a bachelors degree in computer science. I am currently wrapping up my masters of buisness in administration at Daemen College.',
+  paragraphTwo:
+    'Currently work at Daemen College as a full-stack web developer. In my current role, I am responsible for development on our student & faculty web portal. I develop on the front-end of the stack using SCSS, Vue.JS, and HTML5. On the back-end of things, my days of development are spent utilizing MySQL, PhP, and Python.',
+  paragraphThree:
+    'Beyond my day-in day-outs I love to stay busy. I am an avid weight lifter, recently a skydiver, and traveling hiker. In the summer of 2021, my girlfriend and I spent 7 days hiking through southern Utah at a few national parks (Zion, Capitol Reef, Bryce Canyon, Grand Staircase Escalante).',
+  paragraphFour:
+    'I do find time to relax and take a break! In my free time I enjoy playing XBOX, grabbing some beers with my friends, reading some nonfiction, and binge watching some Anime.',
+  resume: '/resume',
 };
 
 // PROJECTS DATA
@@ -60,7 +65,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'brienpacholec@gmail.com',
 };
 
 // FOOTER DATA
@@ -68,28 +73,24 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
+      name: 'instagram',
+      url: 'https://www.instagram.com/brienpacholec/?hl=en',
     },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
+
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/brien-pacholec-a59b6ab4/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/brienpacholec/',
     },
   ],
 };
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
