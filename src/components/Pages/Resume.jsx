@@ -3,9 +3,8 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import PortfolioContext from '../../context/context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faDownload,
-} from '@fortawesome/free-solid-svg-icons'
+import { faDownload, } from '@fortawesome/free-solid-svg-icons'
+// import { pdf } from '../../documents/downloadable_resume.pdf'
 
 const Resume = () => {
 
@@ -35,15 +34,13 @@ const Resume = () => {
         
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="resume-cta">
-            <a href="../documents/downloadable_resume.pdf" download>
+            <a href="/documents/resume.pdf" download>
               <span className="cta-btn cta-btn--hero">
                   <FontAwesomeIcon icon={faDownload} size="1x" />
               </span>
             </a>
           </p>
         </Fade>
-
-
       </Container>
     </section>
   );
