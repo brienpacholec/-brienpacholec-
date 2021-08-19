@@ -61,6 +61,21 @@ export const projectsData = [
   },
 ];
 
+export const resumeData = [
+  {
+    id: nanoid(),
+    title: 'Skills'
+  },
+  {
+    id: nanoid(),
+    title: 'Experience'
+  },
+  {
+    id: nanoid(),
+    title: 'Awards'
+  }
+]
+
 // CONTACT DATA
 export const contactData = {
   cta: '',
