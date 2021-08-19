@@ -4,8 +4,8 @@
 
 ## Features
 
-⚡️ About Me
-⚡️ Resume
+⚡️ About Me\
+⚡️ Resume\
 ⚡️ Styled with Bootstrap v4.3 + Custom SCSS\
 ⚡️ Fully Responsive\
 ⚡️ Configurable color scheme\
