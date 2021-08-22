@@ -61,20 +61,194 @@ export const projectsData = [
   },
 ];
 
-export const resumeData = [
+// SKILLS DATA
+export const skillsData = [
   {
     id: nanoid(),
-    title: 'Skills'
+    name: "Python",
+    logo: '',
   },
   {
     id: nanoid(),
-    title: 'Experience'
+    name: "PhP",
+    logo: "",
   },
   {
     id: nanoid(),
-    title: 'Awards'
-  }
-]
+    name: "Vue.js",
+    logo: "",
+  },
+  {
+    id: nanoid(),
+    name: "Node.js",
+    logo: "",
+  },
+  {
+    id: nanoid(),
+    name: "React",
+    logo: "",
+  },
+  {
+    id: nanoid(),
+    name: "SCSS",
+    logo: "",
+  },
+  {
+    id: nanoid(),
+    name: "SQL",
+    logo: "",
+  },
+  {
+    id: nanoid(),
+    name: "",
+    logo: "",
+  },
+  
+];
+
+// TOOLS DATA
+export const toolsData = [
+  {
+    id: nanoid(),
+    name: "Apache Airflow",
+    logo: '',
+  },
+  {
+    id: nanoid(),
+    name: "Google Scipting",
+    logo: "",
+  },
+  {
+    id: nanoid(),
+    name: "Google API",
+    logo: "",
+  },
+  {
+    id: nanoid(),
+    name: "Visual Studio Code",
+    logo: "",
+  },
+  {
+    id: nanoid(),
+    name: "MSSQL Server",
+    logo: "",
+  },
+  {
+    id: nanoid(),
+    name: "PhPMyAdmin",
+    logo: "",
+  },
+  {
+    id: nanoid(),
+    name: "Cron",
+    logo: "",
+  },
+];
+
+// EXPEREIENCE DATA
+export const experienceData = [
+  {
+    id: nanoid(),
+    role: "Web Developer",
+    logo: "",
+    employer: "Daemen College",
+    start: "April, 2020",
+    end: "Present",
+    duties: [
+      "System wide integrations with third party applications",
+      "Data manipulation and automation with Apache Airflow",
+      "Development and improvoment of student / faculty portal and included systems",
+    ],
+    description: "",
+  },
+  {
+    id: nanoid(),
+    role: "Jr. Web Developer",
+    logo: "",
+    employer: "Daemen College",
+    start: "Octonber, 2019",
+    end: "April, 2020",
+    duties: [
+      "Full stack development using PhP interacting with our MySQL databases",
+      "Utilizing SCSS and Vue.js to provide an interactive student / faculty portal"
+    ],
+    description: "Throughout my time as a web developer I have worked on many exciting projects. From small minor tweaks and changes to established systems to leading development on large scale systmes like that of our COVID-19 Campus Clearance system. I am constantly looking for ways to improve UI/UX utilizing feedback responses from our student's and faculty. Recently, my work has comprised of converting all of our automated scripts from PhP to Python on our more secure Apache Airflow server.",
+  },
+  {
+    id: nanoid(),
+    role: "Jr. Software Developer",
+    logo: "",
+    employer: "Daemen College",
+    start: "Feburary, 2019",
+    end: "October, 2019",
+    duties: [
+      "Developed ASP.NET systems for higher education",
+      "Created and analyzed reports utilizing Microsoft SQL Server and Informer Reporting Software",
+    ],
+    description: "My role in software development was primarly focused on backend processes for the college. Beyond managing and creating reports through Informer - my first main project was creating an Audit Database system. This system (created in Visual Studio utilizing ASP.NET in C#) would be used to track and document audits within our in-house and third party systems.",
+  },
+  {
+    id: nanoid(),
+    role: "",
+    logo: "",
+    employer: "",
+    start: "",
+    end: "",
+    duties: [
+      "",
+      ""
+    ],
+    description: "",
+  },
+  {
+    id: nanoid(),
+    role: "",
+    logo: "",
+    employer: "",
+    start: "",
+    end: "",
+    duties: [
+      "",
+      ""
+    ],
+    description: "",
+  },
+  {
+    id: nanoid(),
+    role: "",
+    logo: "",
+    employer: "",
+    start: "",
+    end: "",
+    duties: [
+      "",
+      ""
+    ],
+    description: "",
+  },
+  
+  
+  
+];
+
+// AWARDS DATA
+export const awardsData = [
+  {
+    id: nanoid(),
+    name: "Python",
+    logo: "",
+  },
+  {
+    id: nanoid(),
+    name: "PhP",
+    logo: "",
+  },
+  {
+    id: nanoid(),
+    name: "HTML",
+    logo: "",
+  },
+];
 
 // CONTACT DATA
 export const contactData = {
@@ -104,6 +278,7 @@ export const footerData = {
     },
   ],
 };
+
 
 // Github start/fork buttons
 export const githubButtons = {
