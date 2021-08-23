@@ -1,13 +1,14 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload, } from '@fortawesome/free-solid-svg-icons'
-import { skillsData, toolsData, experienceData, awardsData } from '../../mock/data';
+import { skillsData, toolsData, educationData, experienceData, awardsData } from '../../mock/data';
 
 const Resume = () => {
-  const skills = skillsData;
+  const skills_list = skillsData;
   const tools = toolsData;
+  const education = educationData;
   const experiences = experienceData;
   const awards = awardsData;
 
@@ -28,155 +29,242 @@ const Resume = () => {
     <section id="resume" className="jumbotron">
       <Container>
 
-        <Fade right={isDesktop} top={isMobile} duration={1000} delay={500} distance="30px">
-          <h1 className="resume-title">
-           <span className="text-color-main">Resume</span>
-            <hr />
-          </h1>
-        </Fade>
-        
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-          <p className="resume-cta">
-            <a href="/documents/resume.pdf" download>
-              <span className="cta-btn cta-btn--hero">
-                  <FontAwesomeIcon icon={faDownload} size="1x" />
-              </span>
-            </a>
-          </p>
-        </Fade>
-
-
-        <br/>
-
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        <Fade right={isDesktop} top={isMobile} duration={1000} delay={500} distance="150px">
           <Row>
-            <Col lg={12}>
-              <h1>Work Expereinces</h1>
+            <Col lg={12} sm={12} className="d-flex justify-content-between">
+                <h1 className="resume-title text-color-main">
+                  Resume
+
+                </h1>
+
+                <p className="resume-cta">
+                  <a href="/documents/resume.pdf" download>
+                    <span className="cta-btn cta-btn--hero">
+                  <FontAwesomeIcon icon={faDownload} size="1x" className=""/>
+
+                    </span>
+                  </a>
+                </p>
             </Col>
           </Row>
+          {/* <div className="d-flex">
+
+            <h1 className="resume-title">
+              <span className="text-color-main">Resume</span>
+            </h1>
+            <p className="resume-cta mb-0">
+              <a href="/documents/resume.pdf" download>
+                <span className="cta-btn cta-btn--hero">
+                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                </span>
+              </a>
+            </p>
+          </div> */}
         </Fade>
+        
+
+        {/* EDUCATION START */}
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="150px">
+            <Row className="mb-2">
+              <Col lg={12}>
+                <h1><span className="text-color-secondary">Education</span></h1>
+              </Col>
+            </Row>
+          </Fade>
+
+          {education.map((entry) => {
+            const { id, school, degree, date } = entry;
+            return(
+              <>
+                <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="150px">
+                    <Row key={id}>
+                      <Col lg={12} sm={12}>
+                        <div className="d-flex justify-content-between">
+                          <h2>{school || '[School]'}</h2>
+                          <h4>{date || '[Date]'}</h4>
+                        </div>
+                        <hr/>
+                          <p>{degree || '[Degree]'}</p>
+                      </Col>
+                    </Row>
+                    <br/>
+                </Fade>
+              </>
+            );
+
+          })};
+
+        {/* EDUCATION END */}
+
+        {/* SKILLS START */}
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="150px">
+            <Row className="mb-2">
+              <Col lg={12}>
+                <h1><span className="text-color-secondary">Skills</span></h1>
+              </Col>
+            </Row>
+          </Fade>
+
+          <Container>
+            <Row xs={1} sm={1} md={2} lg={4}  fluid className="h-100 justify-content-center">
+              {skills_list.map((skill) => {
+                const { id, type, skills } = skill;
+                return(
+                  <>
+                    <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="150px">
+                      <Col className="h-100 p-2">
+                        <Card className="h-100">
+                          <Card.Body>
+                            <Card.Title><h3>{type || '[Type]'}</h3></Card.Title>
+                            <Card.Text>
+                              <ul>
+                                {skills.map((unique_skill) =>{
+                                  const { id, name, logo } = unique_skill;
+                                  return(
+                                    <>
+                                      <li>{name || '[Skill Name]'}</li>
+                                    </>
+                                  );
+                                })}
+                              </ul>
+                            </Card.Text>
+                          </Card.Body>
+                        </Card>
+                      </Col>
+                  </Fade>
+                  </>
+                );
+              })};
+            </Row>
+          </Container>
+        {/* SKILLS END */}
+
+        {/* TOOLS START */}
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="150px">
+            <Row className="mb-2">
+              <Col lg={12}>
+                <h1><span className="text-color-secondary">Development Tools</span></h1>
+              </Col>
+            </Row>
+          </Fade>
+
+          <Container>
+            <ul>
+              {tools.map((tool) => {
+                const { id, name, logo } = tool;
+                return(
+                  <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="150px">
+                    <li>{name || '[Skill Name]'}</li>
+                  </Fade>
+                );
+              })}
+            </ul>
+          </Container>
+        {/* TOOLS END */}
+
+        {/* WORK EXPEREINCES START */}
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="150px">
+            <Row className="mb-2">
+              <Col lg={12}>
+                <h1><span className="text-color-secondary">Work Experiences</span></h1>
+              </Col>
+            </Row>
+          </Fade>
 
 
-        {/* EXPERIENCE */}
-        {experiences.map((experience) => {
-          const { id, role, logo, employer, start, end, duties, description } = experience;
-          return(
-            <>
-            <Fade right={isDesktop} bottom={isMobile} duration={3000} delay={1000} distance="30px">
-              <Row key={id}>
-                <Col lg={12} sm={12}>
-                  <h2>{role || '[Role]'}</h2>
-                  <h4>{start || '[Start Date]'} - {end || '[End Date]'}</h4>
-                    <ul>
-                      {duties.map((duty) => {
+
+          {experiences.map((experience) => {
+            const { id, employer, location, roles } = experience;
+            return(
+              <>
+                <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="150px">
+                  <Row key={id}>
+                    <Col lg={12} sm={12}>
+                      <div className="d-flex justify-content-between">
+                        <h2>{employer || '[Employer]'}</h2>
+                        <h4>{location || '[Location]'}</h4>
+                      </div>
+                      <hr/>
+                      {roles.map((role) => {
+                        const { id, title, logo, employer, start, end, duties, description } = role;
                         return(
-                          <li>{duty}</li>
+                          <>
+                            <Row key={id}>
+                              <Col lg={12} sm={12} className="pl-5">
+                                <h3>{title || '[Role]'}</h3>
+                                <h4>{start || '[Start Date]'} - {end || '[End Date]'}</h4>
+                                <ul>
+                                  {duties.map((duty) => {
+                                    return(
+                                      <li>{duty}</li>
+                                    );
+                                  })}
+                                </ul>
+                                <p>{description}</p>
+                              </Col>
+                            </Row>
+                            <br/>
+                          </>
                         );
                       })}
-                    </ul>
-                    <p>{description || "[Description]"}</p>
-                </Col>
-              </Row>
-              <br/>
-            </Fade>
-            </>
-          );
-        })};
-
-        {/* SKILLS */}
-        {skills.map((skill) => {
-          const { id, name, logo } = skill;
-          return(
-            <Row key={id}>
-              <Col lg={3} sm={6}>
-                <p>{name || '[Skill Name]'}</p>
-              </Col>
-              <Col lg={9} sm={6}>
-              </Col>
-            </Row>
-          );
-        })};
-
-        {/* TOOLS */}
-        {tools.map((tool) => {
-          const { id, name, logo } = tool;
-          return(
-            <Row key={id}>
-              <Col lg={3} sm={6}>
-                <p>{name || '[Skill Name]'}</p>
-              </Col>
-              <Col lg={9} sm={6}>
-              </Col>
-            </Row>
-          );
-        })};
-
-        {/* {resume.map((item) => {
-            const { id, title, info, info2, url, repo, img } = item;
-
-
-            return (
-              <Row key={id}>
-                <Col lg={12} sm={12}>
-                  <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <div>
-                        <p>{info || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}</p>
-                        <p className="mb-4">{info2 || ''}</p>
-                      </div>
-                      <a target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn--hero" href={url || '#!'}>See Live</a>
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-                </Col>
-                <Col lg={8} sm={12}>
-                  <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__image">
-                      <a
-                        href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
-                      >
-                        
-                      </a>
-                    </div>
-                  </Fade>
-                </Col>
-                <br/>
-                <br/>
-                <br/>
-
-              </Row>
+                    </Col>
+                  </Row>
+                  <br/>
+                </Fade>
+              </>
             );
-        })} */}
+          })};
 
-  
+        {/* WORK EXPEREINCES END */}
 
-        <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px" >
-          <p className="about-wrapper__info-text">
-            {'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-          </p>
-        </Fade>
+        
 
+        {/* AWARDS START */}
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="150px">
+            <Row className="mb-2">
+              <Col lg={12}>
+                <h1><span className="text-color-secondary">Awards</span></h1>
+              </Col>
+            </Row>
+          </Fade>
 
+          <Container>
+            {awards.map((award) => {
+              const {id, type, awards} = award;
+              return(
+                <>
+                  <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="150px">
+                    <Row key={id}>
+                      <Col lg={12} sm={12}>
+                        <div className="d-flex justify-content-between">
+                          <h2>{type || '[Type]'}</h2>
+                        </div>
+                        <hr/>
+                        {awards.map((award) => {
+                          const { id, name, year } = award;
+                          return(
+                            <>
+                              <Row key={id}>
+                                <Col lg={12} sm={12} className="pl-5">
+                                  <div className="d-flex justify-content-between">
+                                    <h3>{name || '[Award Name]'}</h3>
+                                    <h4>{year|| '[Year]'}</h4>
+                                  </div>
+                                </Col>
+                              </Row>
+                              <br/>
+                            </>
+                          );
+                        })}
+                      </Col>
+                    </Row>
+                    <br/>
+                  </Fade>
+                </>
+              );
+            })};
+          </Container>
+        {/* AWARDS END */}
       </Container>
     </section>
   );
