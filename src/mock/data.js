@@ -392,7 +392,7 @@ export const awardsData = [
       {
         id: nanoid(),
         name: "All-Conference Academic Team",
-        year: "2016, 2017, 2018", 
+        year: "2016 - 2018", 
       },
     ],
   }

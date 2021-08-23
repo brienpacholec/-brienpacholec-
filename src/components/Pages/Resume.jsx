@@ -34,17 +34,15 @@ const Resume = () => {
             <Col lg={12} sm={12} className="d-flex justify-content-between">
                 <h1 className="resume-title text-color-main">
                   Resume
-
                 </h1>
 
-                <p className="resume-cta">
+                <div className="resume-cta">
                   <a href="/documents/resume.pdf" download>
                     <span className="cta-btn cta-btn--hero">
-                  <FontAwesomeIcon icon={faDownload} size="1x" className=""/>
-
+                      <FontAwesomeIcon icon={faDownload} size="1x" className=""/>
                     </span>
                   </a>
-                </p>
+                </div>
             </Col>
           </Row>
           {/* <div className="d-flex">
@@ -81,7 +79,7 @@ const Resume = () => {
                       <Col lg={12} sm={12}>
                         <div className="d-flex justify-content-between">
                           <h2>{school || '[School]'}</h2>
-                          <h4>{date || '[Date]'}</h4>
+                          <h4 className="align-self-center">{date || '[Date]'}</h4>
                         </div>
                         <hr/>
                           <p>{degree || '[Degree]'}</p>
@@ -182,7 +180,7 @@ const Resume = () => {
                     <Col lg={12} sm={12}>
                       <div className="d-flex justify-content-between">
                         <h2>{employer || '[Employer]'}</h2>
-                        <h4>{location || '[Location]'}</h4>
+                        <h4 className="align-self-center">{location || '[Location]'}</h4>
                       </div>
                       <hr/>
                       {roles.map((role) => {
@@ -248,7 +246,7 @@ const Resume = () => {
                                 <Col lg={12} sm={12} className="pl-5">
                                   <div className="d-flex justify-content-between">
                                     <h3>{name || '[Award Name]'}</h3>
-                                    <h4>{year|| '[Year]'}</h4>
+                                    <h4 className="align-self-center">{year|| '[Year]'}</h4>
                                   </div>
                                 </Col>
                               </Row>
