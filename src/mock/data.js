@@ -142,13 +142,8 @@ export const skillsData = [
     skills: [
       {
         id: nanoid(),
-        name: "NySQL",
+        name: "MySQL",
         logo: '',
-      },
-      {
-        id: nanoid(),
-        name: "MSSQL",
-        logo: "",
       },
       {
         id: nanoid(),
@@ -216,6 +211,11 @@ export const toolsData = [
   },
   {
     id: nanoid(),
+    name: "npm",
+    logo: "",
+  },
+  {
+    id: nanoid(),
     name: "Google Scripts",
     logo: "",
   },
@@ -226,14 +226,20 @@ export const toolsData = [
   },
   {
     id: nanoid(),
+    name: "PhPMyAdmin",
+    logo: "",
+  },
+  {
+    id: nanoid(),
     name: "MSSQL Server",
     logo: "",
   },
   {
     id: nanoid(),
-    name: "PhPMyAdmin",
+    name: "ElasticSearch",
     logo: "",
   },
+  
 ];
 
 export const educationData = [
@@ -392,7 +398,7 @@ export const awardsData = [
       {
         id: nanoid(),
         name: "All-Conference Academic Team",
-        year: "2016 - 2018", 
+        year: "2016-2018", 
       },
     ],
   }

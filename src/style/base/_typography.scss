@@ -46,10 +46,10 @@ a:hover {
   -webkit-text-fill-color: transparent;
 
   // Responsive text purple style
-  @include respond(phone) {
-    background-image: none;
-    -webkit-text-fill-color: $secondary-color;
-  }
+  // @include respond(phone) {
+  //   background-image: none;
+  //   -webkit-text-fill-color: $secondary-color;
+  // }
 }
 
 .text-color-secondary {
@@ -58,8 +58,8 @@ a:hover {
   -webkit-text-fill-color: transparent;
 
   // Responsive text purple style
-  @include respond(phone) {
-    background-image: none;
-    -webkit-text-fill-color: $primary-color;
-  }
+  // @include respond(phone) {
+  //   background-image: none;
+  //   -webkit-text-fill-color: $primary-color;
+  // }
 }
