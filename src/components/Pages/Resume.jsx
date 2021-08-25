@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Breadcrumb } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload, } from '@fortawesome/free-solid-svg-icons'
 import { skillsData, toolsData, educationData, experienceData, awardsData } from '../../mock/data';
@@ -28,6 +28,13 @@ const Resume = () => {
   return (
     <section id="resume" className="jumbotron">
       <Container>
+      
+        <Fade top={isDesktop} top={isMobile} duration={1000} delay={500} distance="150px">
+          <Breadcrumb>
+            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+            <Breadcrumb.Item active>Resume</Breadcrumb.Item>
+          </Breadcrumb>
+        </Fade>
 
         <Fade right={isDesktop} top={isMobile} duration={1000} delay={500} distance="150px">
           <Row>

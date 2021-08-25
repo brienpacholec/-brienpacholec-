@@ -52,14 +52,22 @@ a:hover {
   // }
 }
 
-.text-color-secondary {
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 
-  // Responsive text purple style
-  // @include respond(phone) {
-  //   background-image: none;
-  //   -webkit-text-fill-color: $primary-color;
-  // }
+
+.breadcrumb {
+  background-color: transparent !important;
+  font-size: $default-font-size !important;
+
+  .breadcrumb-item {
+
+
+    a {
+      font-weight: 700;
+      background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+  }
+
 }
