@@ -28,13 +28,18 @@ const Resume = () => {
   return (
     <section id="resume" className="jumbotron">
       <Container>
-      
         <Fade top={isDesktop} top={isMobile} duration={1000} delay={500} distance="150px">
-          <Breadcrumb>
-            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-            <Breadcrumb.Item active>Resume</Breadcrumb.Item>
-          </Breadcrumb>
+          <Row>
+            <Col>
+                <Breadcrumb>
+                  <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                  <Breadcrumb.Item active>Resume</Breadcrumb.Item>
+                </Breadcrumb>
+            </Col>
+          </Row>
         </Fade>
+
+        <br />
 
         <Fade right={isDesktop} top={isMobile} duration={1000} delay={500} distance="150px">
           <Row>
