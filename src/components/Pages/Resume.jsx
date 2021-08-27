@@ -43,11 +43,7 @@ const Resume = () => {
 
         <Fade right={isDesktop} top={isMobile} duration={1000} delay={500} distance="150px">
           <Row>
-            <Col lg={12} sm={12} className="d-flex justify-content-between">
-                <h1 className="resume-title">
-                  <span className="text-color-main">Resume</span>
-                </h1>
-
+            <Col lg={12} sm={12} className="d-flex justify-content-center">
                 <div className="resume-cta">
                   <a href="/documents/resume.pdf" download>
                     <span className="cta-btn cta-btn--hero">
@@ -105,7 +101,7 @@ const Resume = () => {
 
 
           <Container>
-              <Row xs={1} sm={1} md={2} lg={4}  fluid className="h-100 justify-content-center">
+              <Row xs={1} sm={1} md={2} lg={4}  className="h-100 justify-content-center">
                 {skills_list.map((skill) => {
                   const { id, type, skills } = skill;
                   return(
@@ -115,18 +111,16 @@ const Resume = () => {
                           <Card className="h-100">
                             <Card.Body>
                               <Card.Title><h3>{type || '[Type]'}</h3></Card.Title>
-                              <Card.Text>
-                                <ul>
+                                <ul key={id}>
                                   {skills.map((unique_skill) =>{
                                     const { id, name, logo } = unique_skill;
                                     return(
                                       <>
-                                        <li>{name || '[Skill Name]'}</li>
+                                        <li key={id}>{name || '[Skill Name]'}</li>
                                       </>
                                     );
                                   })}
                                 </ul>
-                              </Card.Text>
                             </Card.Body>
                           </Card>
                         </Col>
@@ -156,7 +150,7 @@ const Resume = () => {
                 {tools.map((tool) => {
                   const { id, name, logo } = tool;
                   return(
-                      <li>{name || '[Tool Name]'}</li>
+                      <li key={id}>{name || '[Tool Name]'}</li>
                   );
                 })}
               </ul>
@@ -216,7 +210,7 @@ const Resume = () => {
                     <br/>
                   </>
                 );
-              })};
+              })}
             </Container>
           </Fade>
 
