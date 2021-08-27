@@ -6,13 +6,13 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 5px;               /* width of the entire scrollbar */
 }
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: $dark-grey;        /* color of the tracking area */
 }
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);    /* color of the scroll thumb */
   border-radius: 30px;
 }
