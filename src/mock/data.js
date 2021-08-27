@@ -12,7 +12,24 @@ export const headData = {
 export const heroData = {
   title: "Hey there I'm",
   name: 'Brien Pacholec',
-  subtitle: 'I am a Web Developer',
+  subtitle: [
+    {
+      id: nanoid(),
+      title: "Web Developer",
+    },
+    {
+      id: nanoid(),
+      title: "Hiker",
+    },
+    {
+      id: nanoid(),
+      title: "Weight Lifter",
+    },
+    {
+      id: nanoid(),
+      title: "Beer Enthusiast",
+    },
+  ],
   cta: 'About Me',
 };
 

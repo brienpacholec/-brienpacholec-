@@ -3,10 +3,22 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import Typical from 'react-typical';
+
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
   const { title, name, subtitle, cta } = hero;
+
+  const steps = [
+    'I am a Web Developer 🌐', 6000,
+    'I am a traveling Hiker ⛰️', 6000,
+    'I am an avid Weight Lifter 🏋🏽', 6000,
+    'I am a Beer Enthusiast 🍺', 6000,
+    'I am a Web Developer 🌐', 6000,
+  ];
+  
+
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -28,10 +40,13 @@ const Header = () => {
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
             <span className="text-color-main">{name || 'Your Name'}</span>
-            <br />
-            {subtitle || "I'm the Unknown Developer."}
+          </h1>
+
+          <h1 className="hero-sub-title mt-n5">
+            <Typical wrapper="span" steps={steps} loop={1} className={'caca'} />
           </h1>
         </Fade>
+        
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
