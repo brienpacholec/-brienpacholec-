@@ -44,8 +44,8 @@ const Resume = () => {
         <Fade right={isDesktop} top={isMobile} duration={1000} delay={500} distance="150px">
           <Row>
             <Col lg={12} sm={12} className="d-flex justify-content-between">
-                <h1 className="resume-title text-color-main">
-                  Resume
+                <h1 className="resume-title">
+                  <span className="text-color-main">Resume</span>
                 </h1>
 
                 <div className="resume-cta">
