@@ -39,7 +39,7 @@
       text-align: center;
     }
     @include respond(phone) {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     @include respond(phone-xs) {
       font-size: 2rem;
