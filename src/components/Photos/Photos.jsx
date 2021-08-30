@@ -6,8 +6,8 @@ import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
 
-const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
+const Photos = () => {
+  const { photos } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -23,12 +23,12 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects">
+    <section id="photos">
       <Container>
-        <div className="project-wrapper">
-          <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+        <div className="photo-wrapper">
+          <Title title="Photos" />
+          {photos.map((photo) => {
+            const { title, info, info2, url, repo, img, id } = photo;
 
             return (
               <Row key={id}>
@@ -40,13 +40,14 @@ const Projects = () => {
                     delay={500}
                     distance="30px"
                   >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                    <div className="photo-wrapper__text">
+                      <h3 className="photo-wrapper__text-title">{title || 'Project Title'}</h3>
                       <div>
                         <p>
                           {info ||
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
+                        <p>Fuck off</p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
                       <a
@@ -79,7 +80,7 @@ const Projects = () => {
                     delay={1000}
                     distance="30px"
                   >
-                    <div className="project-wrapper__image">
+                    <div className="photo-wrapper__image">
                       <a
                         href={url || '#!'}
                         target="_blank"
@@ -116,4 +117,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Photos;

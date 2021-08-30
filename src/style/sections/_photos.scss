@@ -1,4 +1,4 @@
-#projects {
+#photos {
   background-color: $white-color;
   color: $dark-blue-text;
   margin-top: -15rem;
@@ -9,7 +9,7 @@
     padding-top: 5rem;
   }
 
-  .project-wrapper {
+  .photo-wrapper {
     margin-bottom: 15rem;
 
     @include respond(phone) {
