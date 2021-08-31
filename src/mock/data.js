@@ -82,8 +82,8 @@ export const projectsData = [
 export const photosData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
+    img: 'myrtle_beach.jpg',
+    title: 'Boogieing in Myrtle Beach',
     info: '',
     info2: '',
     url: '',

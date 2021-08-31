@@ -26,7 +26,7 @@ const Photos = () => {
     <section id="photos">
       <Container>
         <div className="photo-wrapper">
-          <Title title="Photos" />
+          <Title title="Day In The Life" />
           {photos.map((photo) => {
             const { title, info, info2, url, repo, img, id } = photo;
 
@@ -47,7 +47,6 @@ const Photos = () => {
                           {info ||
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
-                        <p>Fuck off</p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
                       <a
@@ -81,30 +80,23 @@ const Photos = () => {
                     distance="30px"
                   >
                     <div className="photo-wrapper__image">
-                      <a
-                        href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
+                      <Tilt
+                        options={{
+                          reverse: false,
+                          max: 8,
+                          perspective: 1000,
+                          scale: 1,
+                          speed: 300,
+                          transition: true,
+                          axis: null,
+                          reset: true,
+                          easing: 'cubic-bezier(.03,.98,.52,.99)',
+                        }}
                       >
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
-                        >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
-                        </Tilt>
-                      </a>
+                        <div data-tilt className="thumbnail rounded">
+                          <ProjectImg alt={title} filename={img} />
+                        </div>
+                      </Tilt>
                     </div>
                   </Fade>
                 </Col>
