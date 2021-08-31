@@ -83,29 +83,38 @@ export const photosData = [
   {
     id: nanoid(),
     img: 'myrtle_beach.jpg',
-    title: 'Boogieing in Myrtle Beach',
-    info: '',
+    title: 'Myrtle Beach, South Carolina',
+    info: "In August 2021, I spent fourteen days down in Myrtle Beach. I did a little bit of boogie boarding before getting completely tossed around like a rag-doll by the forces of of the ocean. Also, I was lucky enough to get a tee time on the areas oldest golf course - The Grand Daddy, Pine Lakes (don't ask how I shot it's a rough subject).",
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'slot_canyons.jpg',
+    title: 'Spooky Slot Canyons, Utah',
+    info: "In July, 2021, my girlfriend and I traveled throughout south Utah visit some of the states gorgeous National Parks. We started off our joruney spending two days hiking through Zion. We are able to complete Angels Landing, coined the scariest hike in the United States, the Narrows, and a few other trails. Next up, we took a journey out to Capitol Reef and got to see some incredible rock sculptures like Cassidy's Arch. Then we tackled Bryce Canyon's two most popular trails, the Navajo Loop and Figure 8. Finally, we spent two days in the desert at the Grandstaircase Escalante navigating through some tight cornered slot canyons.",
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'skiing.jpg',
+    title: 'Killington, Vermont',
+    info: "In January, 2021 we got a group of friends together for a weekend skiing getaway. The six of us tackled 'The Beast' also known as Killington Ski Resort. We spent countless runs navigating throughout the hundreds of woods trails the resort has to offer. I would 10/10 recommend this resort to any east cost skiers or boarders looking for a good mountain.",
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'big_slide.jpg',
+    title: 'Lake Placid, New York',
+    info: "One of my girlfriends largest goals is to climb all 46 high peaks in New York's Adirondacks. On this day back in September, 2020 we climbed Lower Wolf Jaw, Upper Wolf Jaw, Armstrong, & Gothics all in one day, making up for a 20+ mile hike. That being said, I took the liberty to take the edge off of the long hike and decided to shotgun a good ol' Blue Light at the top of every peak. ",
+    info2: '',
+    url: '',
+    repo: '', // if no repo, the button will not show up
   },
 ];
 
