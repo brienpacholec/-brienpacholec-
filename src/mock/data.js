@@ -37,13 +37,13 @@ export const heroData = {
 export const aboutData = {
   img: 'brien_1.jpg',
   paragraphOne:
-    'I reign from Buffalo, New York home of the Buffalo Bills & the worlds best chicken wings! I graduated from Ithaca College where I played defensive tackle for the football team in 2019 with a bachelors degree in computer science. I am currently wrapping up my masters of buisness in administration at Daemen College.',
+    "I reign from Buffalo, New York home of the Buffalo Bills & the world's best chicken wings! I graduated from Ithaca College where I played defensive tackle for the football team in 2019 with a bachelor's degree in computer science. I am currently wrapping up my master's of business in administration at Daemen College.",
   paragraphTwo:
-    'Currently work at Daemen College as a full-stack web developer. In my current role, I am responsible for development on our student & faculty web portal. I develop on the front-end of the stack using SCSS, Vue.JS, and HTML5. On the back-end of things, my days of development are spent utilizing MySQL, PhP, and Python.',
+    'Currently, work at Daemen College as a full-stack web developer. In my current role, I am responsible for the development of our student & faculty web portal. I develop on the front-end of the stack using SCSS, Vue.JS, and HTML5. On the back-end of things, my days of development are spent utilizing MySQL, PHP, and Python.',
   paragraphThree:
-    'Beyond my day-in day-outs I love to stay busy. I am an avid weight lifter, recently a skydiver, and traveling hiker. In the summer of 2021, my girlfriend and I spent 7 days hiking through southern Utah at a few national parks (Zion, Capitol Reef, Bryce Canyon, Grand Staircase Escalante).',
+    'Beyond my day-in-day-out, I love to stay busy. I am an avid weight lifter, recently a skydiver, and traveling hiker. In the summer of 2021, my girlfriend and I spent 7 days hiking through southern Utah at a few national parks (Zion, Capitol Reef, Bryce Canyon, Grand Staircase Escalante).',
   paragraphFour:
-    'I do find time to relax and take a break! In my free time I enjoy playing XBOX, grabbing some beers with my friends, reading some nonfiction, and binge watching some Anime.',
+    'I do find time to relax and take a break! In my free time, I enjoy playing XBOX, grabbing some beers with my friends, reading some nonfiction, and binge-watching some anime.',
   resume: '/resume',
 };
 
@@ -84,7 +84,7 @@ export const photosData = [
     id: nanoid(),
     img: 'myrtle_beach.jpg',
     title: 'Myrtle Beach, South Carolina',
-    info: "In August 2021, I spent fourteen days down in Myrtle Beach. I did a little bit of boogie boarding before getting completely tossed around like a rag-doll by the forces of of the ocean. Also, I was lucky enough to get a tee time on the areas oldest golf course - The Grand Daddy, Pine Lakes (don't ask how I shot it's a rough subject).",
+    info: "In August 2021, I spent fourteen days down in Myrtle Beach. I did a little bit of boogie boarding before getting completely tossed around like a rag-doll by the forces of the ocean. Also, I was lucky enough to get a tee time on the area's oldest golf course - The Grand Daddy, Pine Lakes (don't ask how I shot it's a rough subject).",
     info2: '',
     url: '',
     repo: '', // if no repo, the button will not show up
@@ -93,7 +93,7 @@ export const photosData = [
     id: nanoid(),
     img: 'slot_canyons.jpg',
     title: 'Spooky Slot Canyons, Utah',
-    info: "In July, 2021, my girlfriend and I traveled throughout south Utah visit some of the states gorgeous National Parks. We started off our joruney spending two days hiking through Zion. We are able to complete Angels Landing, coined the scariest hike in the United States, the Narrows, and a few other trails. Next up, we took a journey out to Capitol Reef and got to see some incredible rock sculptures like Cassidy's Arch. Then we tackled Bryce Canyon's two most popular trails, the Navajo Loop and Figure 8. Finally, we spent two days in the desert at the Grandstaircase Escalante navigating through some tight cornered slot canyons.",
+    info: "In July 2021, my girlfriend and I traveled throughout southern Utah to visit some of the state's gorgeous National Parks. We started off our journey by spending two days hiking through Zion. We are able to complete Angels Landing, coined the scariest hike in the United States, the Narrows, and a few other trails. Next up, we took a journey out to Capitol Reef and got to see some incredible rock sculptures like Cassidy's Arch. Then we tackled Bryce Canyon's two most popular trails, the Navajo Loop and Figure 8. Finally, we spent two days in the desert at the Grand Staircase Escalante navigating through some tight cornered slot canyons.",
     info2: '',
     url: '',
     repo: '', // if no repo, the button will not show up
@@ -102,7 +102,7 @@ export const photosData = [
     id: nanoid(),
     img: 'skiing.jpg',
     title: 'Killington, Vermont',
-    info: "In January, 2021 we got a group of friends together for a weekend skiing getaway. The six of us tackled 'The Beast' also known as Killington Ski Resort. We spent countless runs navigating throughout the hundreds of woods trails the resort has to offer. I would 10/10 recommend this resort to any east cost skiers or boarders looking for a good mountain.",
+    info: "In January 2021, we got a group of friends together for a weekend skiing getaway. The six of us tackled 'The Beast' also known as Killington Ski Resort. We spent countless runs navigating throughout the hundreds of woods trails the resort has to offer. I would 10/10 recommend this resort to any east-cost skiers or boarders looking for a good mountain.",
     info2: '',
     url: '',
     repo: '', // if no repo, the button will not show up
@@ -111,7 +111,7 @@ export const photosData = [
     id: nanoid(),
     img: 'big_slide.jpg',
     title: 'Lake Placid, New York',
-    info: "One of my girlfriends largest goals is to climb all 46 high peaks in New York's Adirondacks. On this day back in September, 2020 we climbed Lower Wolf Jaw, Upper Wolf Jaw, Armstrong, & Gothics all in one day, making up for a 20+ mile hike. That being said, I took the liberty to take the edge off of the long hike and decided to shotgun a good ol' Blue Light at the top of every peak. ",
+    info: "One of my girlfriend's largest goals is to climb all 46 high peaks in New York's Adirondacks. On this day back in September 2020, we climbed Lower Wolf Jaw, Upper Wolf Jaw, Armstrong, & Gothics all in one day, making up for a 20+ mile hike. That being said, I took the liberty to take the edge off of the long hike and decided to shotgun a good ol' Blue Light at the top of every peak.",
     info2: '',
     url: '',
     repo: '', // if no repo, the button will not show up
@@ -326,12 +326,12 @@ export const experienceData = [
         start: 'April, 2020',
         end: 'Present',
         duties: [
-          'System wide integrations with third party applications',
+          'System-wide integrations with third-party applications',
           'Data manipulation and automation with Apache Airflow',
-          'Development and improvoment of student / faculty portal and included systems',
+          'Development and improvement of student/faculty portal and included systems',
         ],
         description:
-          "Throughout my time as a web developer I have worked on many exciting projects. From small minor tweaks and changes to established systems to leading development on large scale systmes like that of our COVID-19 Campus Clearance system. I am constantly looking for ways to improve UI/UX utilizing feedback responses from our student's and faculty. In my current role, my responsibilites have been extended through continuous development on our Apache Airflow server. Additionally, this role takes lead on all major system changes to our student / faculty portal.",
+          "Throughout my time as a web developer, I have worked on many exciting projects. From small minor tweaks and changes to established systems to leading development on large-scale systems like that of our COVID-19 Campus Clearance system. I am constantly looking for ways to improve UI/UX utilizing feedback responses from our students and faculty. In my current role, my responsibilities have been extended through continuous development on our Apache Airflow server. Additionally, this role takes lead on all major system changes to our student/faculty portal.",
       },
       {
         id: nanoid(),
@@ -340,8 +340,8 @@ export const experienceData = [
         start: 'Octonber, 2019',
         end: 'April, 2020',
         duties: [
-          'Full stack development using PhP interacting with our MySQL databases',
-          'Utilizing SCSS and Vue.js to provide an interactive student / faculty portal',
+          'Full-stack development using PHP interacting with our MySQL databases',
+          'Utilizing SCSS and Vue.js to provide an interactive student/faculty portal',
         ],
         description: '',
       },
@@ -356,7 +356,7 @@ export const experienceData = [
           'Created and analyzed reports utilizing Microsoft SQL Server and Informer Reporting Software',
         ],
         description:
-          'My role in software development was primarly focused on backend processes for the college. Beyond managing and creating reports through Informer - my first main project was creating an Audit Database system. This system (created in Visual Studio utilizing ASP.NET in C#) would be used to track and document audits within our in-house and third party systems.',
+          'My role in software development was primarily focused on backend processes for the college. Beyond managing and creating reports through Informer - my first main project was creating an Audit Database system. This system (created in Visual Studio utilizing ASP.NET in C#) would be used to track and document audits within our in-house and third-party systems.',
       },
     ],
   },
@@ -374,7 +374,7 @@ export const experienceData = [
         duties: [
           'Develop restaurant image by providing fast and courteous service to guests',
           'Problem-solve and resolve customer complaints and issues',
-          'Provide excellent customer service and ensured that all of my guests were well taken care of',
+          'Provide excellent customer service and ensuring that all of my guests were well taken care of',
         ],
         description: '',
       },
