@@ -37,7 +37,7 @@ export const heroData = {
 export const aboutData = {
   img: 'brien_1.jpg',
   paragraphOne:
-    "I reign from Buffalo, New York home of the Buffalo Bills & the world's best chicken wings! I graduated from Ithaca College where I played defensive tackle for the football team in 2019 with a bachelor's degree in computer science. I am currently wrapping up my master's of business in administration at Daemen College.",
+    "I reign from Buffalo, New York home of the Buffalo Bills & the world's best chicken wings! I graduated from Ithaca College in 2019 with a bachelor's degree in computer science. As my time as a Bomber I played defensive tackle for the football team. I am currently wrapping up my master's of business in administration at Daemen College.",
   paragraphTwo:
     'Currently, work at Daemen College as a full-stack web developer. In my current role, I am responsible for the development of our student & faculty web portal. I develop on the front-end of the stack using SCSS, Vue.JS, and HTML5. On the back-end of things, my days of development are spent utilizing MySQL, PHP, and Python.',
   paragraphThree:
@@ -428,7 +428,7 @@ export const awardsData = [
       {
         id: nanoid(),
         name: 'All-Conference',
-        year: '2017, 2018',
+        year: '2017 - 2018',
       },
     ],
   },
@@ -439,7 +439,7 @@ export const awardsData = [
       {
         id: nanoid(),
         name: "Daemen College Dean's List",
-        year: '2019, 2020',
+        year: '2019 - 2020',
       },
       {
         id: nanoid(),
@@ -454,7 +454,7 @@ export const awardsData = [
       {
         id: nanoid(),
         name: 'All-Conference Academic Team',
-        year: '2016-2018',
+        year: '2016 - 2018',
       },
     ],
   },

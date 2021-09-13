@@ -77,7 +77,6 @@ const Resume = () => {
                             <h2>{school || '[School]'}</h2>
                             <h4 className="align-self-center">{date || '[Date]'}</h4>
                           </div>
-                          <hr/>
                             <p>{degree || '[Degree]'}</p>
                         </Col>
                       </Row>
