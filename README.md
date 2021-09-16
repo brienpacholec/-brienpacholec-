@@ -5,8 +5,6 @@
 - Home Page
 - Resume (downloadable PDF)
 
-<hr>
-
 ## Timeline 📅
 
 August, 2021
@@ -24,15 +22,11 @@ September, 2021
 - Ran the sight through Grammarly
 - Updated downloadable resume content to match web-pages
 
-<hr>
-
 ## TODO ✔️
 
 - Incorporate Python application into the site
 - Embed Instragram feed
 - Drink a beer
-
-<hr>
 
 ## License ⚖️
 
