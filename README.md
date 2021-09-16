@@ -19,7 +19,7 @@ August, 2021
 
 September, 2021
 
-- Ran the sight through Grammarly
+- Ran the site through Grammarly
 - Updated downloadable resume content to match web-pages
 
 ## TODO ✔️
